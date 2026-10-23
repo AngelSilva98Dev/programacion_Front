@@ -2,11 +2,12 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": "9a7dbb28-a1bd-4bc5-999f-623c1d1cb5bb"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "Sigeac_front": {
+    "Actividad_front": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Sigeac_front:build:production"
+              "buildTarget": "Actividad_front:build:production"
             },
             "development": {
-              "buildTarget": "Sigeac_front:build:development"
+              "buildTarget": "Actividad_front:build:development"
             }
           },
           "defaultConfiguration": "development"
