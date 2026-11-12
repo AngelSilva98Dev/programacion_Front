@@ -1,0 +1,25 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <h2>Mis Pasatiempos</h2>
+
+    <div formArrayName="pasatiempos">
+
+        @for (pasatiempo of pasatiempos.controls; track $index; let i = $index) {
+        <div class="campo-pasatiempo">
+            <label>Pasatiempo {{ i + 1 }}:</label>
+
+            <input type="text" [formControlName]="i" placeholder="Ingresá un pasatiempo">
+        </div>
+        }
+
+    </div>
+
+    <button type="button" (click)="agregarPasatiempo()">
+        Agregar Pasatiempo
+    </button>
+
+    <button type="submit">
+        Enviar
+    </button>
+
+</form>
